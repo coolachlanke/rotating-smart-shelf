@@ -1,0 +1,102 @@
+body {
+    background-color: #ffffff;
+  }
+  
+#shelf-container {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+canvas {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+.led-control, .motor-control {
+    border-radius: 8px;
+  }
+  
+h5 {
+    font-weight: bold;
+  }
+  
+.feedback-container {
+    position: absolute;
+    top: 20px; /* Overlay near the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
+    z-index: 1000; /* Ensure it stays above the canvas */
+    pointer-events: none; /* Prevent interaction with the feedback box */
+}
+
+#feedback {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth fade and slide */
+}
+
+#feedback.show {
+    opacity: 1; /* Fully visible */
+    transform: translateY(20px); /* Slide slightly downward */
+}
+
+
+
+.container {
+    max-width: 90%; /* Limit the container width to 90% of the viewport */
+    margin: 0 auto; /* Center the container */
+    display: flex; /* Arrange child elements in a row */
+    justify-content: space-between; /* Distribute spacing evenly between items */
+    align-items: center; /* Align items vertically */
+    padding: 20px; /* Add padding around the container */
+}
+
+.control-group {
+    flex: 1; /* Equal width for each group */
+    text-align: center; /* Center the content */
+    margin: 0 10px; /* Space between groups */
+    padding: 15px; /* Add padding inside the control group */
+    background-color: #f9f9f9; /* Light background for visibility */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.control-row {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 15px; /* Space between label and dropdown */
+    margin-bottom: 20px; /* Space between rows */
+    padding: 10px 0; /* Add padding for visual separation */
+}
+
+.control-label {
+    font-size: 1.1rem; /* Slightly larger for readability */
+    font-weight: bold;
+    width: 150px; /* Fixed width to align labels */
+    text-align: right; /* Align text to the right */
+    margin-right: 15px; /* Space between label and dropdown */
+    color: #333;
+}
+
+select.led-control,
+select.motor-control {
+    font-size: 1.2rem;
+    padding: 10px;
+    width: 100%; /* Allow dropdowns to adapt to container */
+    max-width: 300px; /* Prevent them from becoming too wide */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+  
