@@ -22,4 +22,4 @@ Designed for showpieces, timed rotations and eye-catching animations.
 ---
 
 > Designed by Lachlan Cooke in late 2024.
-> Check out [lachlancooke.com/projects](https://www.lachlancooke.com/projects) für mehr details!
+> Check out [lachlancooke.com/projects](https://www.lachlancooke.com/projects) für mehr details.
