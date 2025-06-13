@@ -1,6 +1,6 @@
 # Rotating Smart Shelf
 
-Motorized display shelf for Rubik’s Cubes and other collectibles, powered by ESP32-C3 and WS2812B RGB LEDs.  
+Motorised display shelf for Rubik’s Cubes and other collectibles, powered by ESP32-C3 and WS2812B RGB LEDs.  
 Designed for showpieces, timed rotations and eye-catching animations.
 
 ---
